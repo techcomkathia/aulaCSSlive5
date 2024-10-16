@@ -1,0 +1,56 @@
+/* RESET DE PROPRIEDADES PADRÃO PARA TODOS OS ELEMENTOS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(black-texture.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+img{
+    width: 200px;
+    border-radius: 100%;
+}
+
+main{
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 350px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 45px;
+    color:blueviolet;
+    margin: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(134, 39, 222) ;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+}

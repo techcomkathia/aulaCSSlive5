@@ -7,6 +7,21 @@
     box-sizing: border-box;
 }
 
+/* VARIAVEIS GLOBAIS (:ROOT) */
+/* familia da fonte textos */
+/* cor1 - background principal e fontes das ancoras */
+/* cor2 - background das ancoras e fontes do título principal */
+/* cor3 - background das ancoras para o hover */
+:root{
+    --cor1: #ffffff;
+    --cor2: blueviolet ;
+    --cor3: rgb(222, 39, 186) ;
+
+    --fonte-textos: 'Lato', 'Arial', sans-serif;
+}
+
+
+
 body{
     background-image:url(black-texture.jpg) ;
     display: flex;
@@ -22,7 +37,7 @@ img{
 
 main{
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--cor1);
     flex-direction: column;
     width: 350px;
     padding: 15px;
@@ -33,20 +48,20 @@ main{
 
 h1{
     font-size: 45px;
-    color:blueviolet;
+    color: var(--cor2);
     margin: 20px;
 }
 
 p{
     text-align: center;
     font-size: 18px;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: var(--fonte-textos);
 }
 
 a{
     text-decoration: none;
-    background-color: rgb(134, 39, 222) ;
-    color: #ffffff;
+    background-color: var(--cor2);
+    color: var(--cor1);
     padding: 20px;
     margin: 10px;
     width: 100%;
@@ -58,5 +73,5 @@ a{
 
 
 a:hover{
-    background-color: rgb(222, 39, 186) ;
+    background-color: var(--cor3) ;
 }
